@@ -22,14 +22,27 @@
   
 float distance0, distance1, distance2, distance3;
 
-int buzzer = 6;
+void myTone(byte pin, uint16_t frequency, uint16_t duration)
+{ // input parameters: Arduino pin number, frequency in Hz, duration in milliseconds
+  unsigned long startTime=millis();
+  unsigned long halfPeriod= 1000000L/frequency/2;
+  pinMode(pin,OUTPUT);
+  while (millis()-startTime< duration)
+  {
+    digitalWrite(pin,HIGH);
+    delayMicroseconds(halfPeriod);
+    digitalWrite(pin,LOW);
+    delayMicroseconds(halfPeriod);
+  }
+  pinMode(pin,INPUT);
+}
+
 
 void setup() {
   pinMode(2, OUTPUT);
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
   pinMode(5, OUTPUT);
-  pinMode(buzzer, OUTPUT);
   Serial.begin(115200);
 }
 
@@ -83,9 +96,9 @@ void loop() {
   else{
     digitalWrite(5, LOW);
     Serial.print("O ");
-    noTone(buzzer);
   }
-  
-  tone(buzzer, 440);
+  if((distance1<10 || distance2< 10) || (distance3<10 || distance0<10)){
+    myTone(7,1070, 100);
+  }
   delay(150);
 }
