@@ -10,6 +10,24 @@ div a img{
 	display: none;
 }
 
+.sponsorsLogos a img{
+	text-decoration: none;
+	display: inline;
+}
+
+.sponsorsLogos a{
+	text-decoration: none;
+	border-bottom-color: transparent !important;
+}
+
+.centerV {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2273,6 +2291,10 @@ input, select, textarea {
 		border-bottom: none;
 		position: relative;
 	}
+	
+	.icon a{
+		text-decoration: none;
+	}
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -2352,6 +2374,7 @@ input, select, textarea {
 				font-size: 4em;
 				line-height: 1em;
 			}
+		
 
 /* Image */
 
