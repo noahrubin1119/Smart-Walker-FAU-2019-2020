@@ -1,0 +1,746 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164957368-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164957368-2');
+</script>
+
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+		<script src="https://kit.fontawesome.com/1909a15b1c.js" crossorigin="anonymous"></script>
+		<title>Smart Walker</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -
+			<section id="header">
+				<div class="inner">
+					<span><img width="200vw" src= "./images/walkerLogo.png"></img></span>
+					<h1>Introducing the <strong>Smart Walker</strong> </h1>
+					<p>A walker with integrated sensors and feedback for obstacle avoidance.</p>
+					<ul class="actions special">
+						<li><a href="#one" class="button scrolly">Learn More</a></li>
+					</ul>
+				</div>
+			</section>
+-->
+		<!-- One -->
+		<div class="sticky">
+				
+				<a href="./index.html" class="button"><i class="far fa-arrow-alt-circle-left"></i>Back</a>
+		</div>
+			<section id="about" class="main style1">
+			
+
+				<div class="container">
+					
+					</br></br>
+					<div class="row gtr-150">
+					
+					
+							<header>
+							<h1><strong>Smart Walker</strong> </h1>
+							</header>
+							
+								
+								
+							</div>
+							
+						<div class="row gtr-150">
+						<div class="col-3 col-12-medium">
+						<header class="major">
+							<h2>Background</h2>
+						</header>
+						</div>
+						<div class="col-9 col-12-medium">
+							
+							
+							<p>
+							This year, the goal was to complete a project that could have more real-world applications. Noah went to Sonata, a local nursing home, and he told us of the main problems that some of the patients were having. He informed us about how some of the patients are constantly walking into walls or over obstacles with their walkers, so as a group, we decided to tackle this problem. <br><br>We had the idea of building a 'Smart Walker', or a walker that could potentially stop these patients from running into these obstacles with their walkers. </p>
+							The approach we took to building this project was based on 3 steps of success. </p>
+							
+							<p>
+							
+							<ol>
+							
+							<li>Make the walker beep when the patient got too close to an obstacle.</li> 
+							<li>Get the walker to break when the patient got too close to an obstacle</li>
+							<li>Get the walker to beep/vibrate more frequently as the patient got closer and closer to the obstacle.</li>
+							</ol>
+							
+							</p>
+							
+							
+							<p>
+							We collaberated and managed our tasks using a Trello Board - a virtual bulletin board. Everyone on the team created a mini-project with an HC-SR04 Ultrasonic Sensor to learn basic Arduino skills, and after COVID-19 stopped development of the project, everyone completed an Onshape course to better prepare us for next year. </p>
+							<span class="image fit"><a href="https://trello.com/b/TZLLzxmT" target="_blank"><img  src="images/trelloss.png" alt="trelloBoardScreenshot" /></a></span>
+							<p>
+							Because we took this multi-step approach, we were able to finish the project's MVP (Minimum Viable Product) so that the first level of success works, but we were unable to complete the second and third levels of success. This means that our project still accomplished our goal of helping the patient with their problem of running into obstacles, it just wasn't as sophisticated as we originally wanted it to be due to our shortened time table.</p>
+					
+						</div>
+						<!--<div class="col-3 col-12-medium">
+							<span class="image fit"><img src="images/smartWalkerv1.png" alt="smartwalker" /></span>
+							
+
+						</div>-->
+						
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="schematics" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-3 col-12-medium">
+						<header class="major">
+							<h2>Schematics</h2>
+						</header>
+						</div>
+						<div class="col-9 col-12-medium">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="3d" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-3 col-12-medium">
+						<header class="major">
+							<h2>3D Design</h2>
+						</header>
+						</div>
+						<div class="col-9 col-12-medium">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="code" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-3 col-12-medium">
+						<header class="major">
+							<h2>Code</h2>
+						</header>
+						</div>
+						<div class="col-9 col-12-medium">
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three --
+			<section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Learn about the Development</h2>
+					</header>
+					<p>In order to make a final prototype, we had to make schematics and figure out the electronics, design and construct a mount to attach the sensors to existing walkers, and code the microcontroller.</p>
+					<div class="row gtr-150">
+						<div class="col-4 col-12-medium">
+							<span class="icon solid style2 major fa-bolt"></span></span>
+							<h3>Schematics</h3>
+							<p>We designed a custon circut board for each of the Ultrasonic Sensors and a custom Arduino shield.</p>
+							<ul class="actions special">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><span class="icon solid style5 major fa-desktop"></span>
+							<h3>3D Design and Construction</h3>
+							<p>We used CAD (Computer Aided Design) to design the mounts for the sensors and the bar.</p>
+							<ul class="actions special">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><span class="icon solid style1 major fa-code"></span>
+							<h3>Code</h3>
+							<p>Using Arduino IDE, we coded the microcontroller to buzz baised off of sensor values.</p>
+							<ul class="actions special">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		<section id="problems" class="main style2">
+				<div class="container">
+					<div class="row gtr-150">
+							
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Problems Faced by the Team</h2>
+							</header>
+							<div class="slideshow-container" style="color: black;">
+								<div class="mySlides">
+									<q>One of the problems for me was a lack of information at some points. For example, when we were given the kits for winter break, you gave them to us and didn't give much direction.</q>
+									<p class="author">- Aaron Bookstien (Sophomore)</p>
+								</div>
+								
+								<div class="mySlides">	
+									<q>One of the problems I faced was with my computer. I’ve had my computer for a while now, so it’s glitchy and slow. This made it harder for me to download and work with the required software and programs for this assignment.</q>
+									<p class="author">- Maya Garaway (Freshman)</p>
+
+								</div>
+								
+								<div class="mySlides">	
+									<q>Due to COVID19, we weren't able to meet with Jean at Sonata as planned. Hopefully, in the future, we will be able to give her the walker, have her test it out, and continue to improve on it.</q>
+									<p class="author">- Noah Rubin (Junior; Project Lead)</p>
+
+								</div>
+								
+								<div class="mySlides">	
+									<q>My main contribution to the project was design so the virus didn't affect my tasks as much as it did others. It was quite annoying though to not be able to work as team face to face and argue with eachother about our different solutions to each microproblem within our project.</q>
+									<p class="author">- Jacob Levy (Sophomore)</p>
+
+								</div>
+								
+								<div class="mySlides">	
+									<q>One of the obvious problems faced was the inability to work on the project remotely. Although I worked in the project before, I wasn’t able to help wire the sensors like I was originally supposed to do. All I could do was draw the schematics.</q>
+									<p class="author">- Isaac Berkower (Sophomore)</p>
+
+								</div>
+								
+								<div class="mySlides">	
+									<q>It got a bit difficult to work on and communicate about the project once the virus came out. I was able to get around this problem soon after.</q>
+									<p class="author">- Hunter David (Sophomore)</p>
+
+								</div>
+								
+								<div class="mySlides">	
+									<q>The problems I faced during this project was the fact that I was using a new soldering iron that I wasn’t used too so I got burned in the first circuit. I got scared for a little bit, but I soon had to muster up the courage to get back on it, after that I used a tweezer to hold the solder so this mistake wouldn’t happen again.</q>
+									<p class="author">- Hunter Rosenzweig (Freshman)</p>
+
+								</div>
+								<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+</div>
+							</div>
+						
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Favorite Part of the Project</h2>
+							</header>
+							<div class="slideshow-containerF" style="color: black;">
+								<div class="mySlidesF">
+									<q>My favorite part was learning new things and that we were able to work together to get the project done.</q>
+									<p class="author">- Aaron Bookstien (Sophomore)</p>
+								</div>
+								<div class="mySlidesF">
+									<q>My favorite part of this project was that it was a serious long term project. I have done several smaller projects in the past, but this taught me how to work with a bigger group and how important it is that everyone does their job.</q>
+									<p class="author">- Maya Garaway (Freshman)</p>
+								</div>
+								<div class="mySlidesF">
+									<q>My favorite part of the project was being able to lead a committed group of teens who wanted to finish the project just as much as I did! They were all willing to learn more and put in the time to get it done.</q>
+									<p class="author">- Noah Rubin (Junior; Project Lead)</p>
+								</div>
+								<div class="mySlidesF">
+									<q>My favorite part of the project was the fact that it had real world applications and that we were able to actually help someone with this project.</q>
+									<p class="author">- Isaac Berkower (Sophomore)</p>
+								</div>
+								<div class="mySlidesF">
+									<q>I enjoyed learning how to use onshape as well as working with my peers to solve a problem</q>
+									<p class="author">- Jacob Levy (Sophomore)</p>
+								</div>
+								<div class="mySlidesF">
+									<q>My favorite part of the project was working on something new that I have not previously done before.</q>
+									<p class="author">- Hunter David (Sophomore)</p>
+								</div>
+								<div class="mySlidesF">
+									<q>My favorite part of the project was getting to use my soldering iron for something that was not just for myself, it was really fun to do. Doing everything like figuring out how to build it and how much solder I need to use to build it. I really enjoyed figuring those things out.</q>
+									<p class="author">- Hunter Rosenzweig (Freshman)</p>
+								</div>
+
+
+								<a class="prev" onclick="plusSlidesF(-1)">❮</a>
+								<a class="next" onclick="plusSlidesF(1)">❯</a>
+
+								</div>
+								<div class="dot-container">
+								  <span class="dotF" onclick="currentSlideF(1)"></span> 
+								  <span class="dotF" onclick="currentSlideF(2)"></span>
+								  <span class="dotF" onclick="currentSlideF(3)"></span> 
+								  <span class="dotF" onclick="currentSlideF(4)"></span>
+								  <span class="dotF" onclick="currentSlideF(5)"></span> 
+								  <span class="dotF" onclick="currentSlideF(6)"></span>
+								  <span class="dotF" onclick="currentSlideF(7)"></span>
+								</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		<section id="plans" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Limitations due to COVID19 and Version 2</h2>
+							</header>
+							<p>Once COVID-19 hit, it was hard at first to physically work on and communicate about the project, but it was an issue that was gotten around pretty quickly.<br><br>Due to COVID-19, we were not able to meet with Jean at Sonata like we wanted to. Our goal is eventually to be able to give her the walker so she can test it out, and then continue to work and improve it once that is done.</p>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							
+								<span class="image fit"><img src="images/covid19.png" alt="" /></span>
+							
+					</div>
+				</div>
+			</section>	
+		<!-- Four
+			<section id="four" class="main style2 special">
+				<div class="container">
+					<header class="major">
+						<h2>Ipsum feugiat consequat?</h2>
+					</header>
+					<p>Sed lacus nascetur ac ante amet sapien.</p>
+					<ul class="actions special">
+						<li><a href="#" class="button wide primary"></a></li>
+						<li><a href="#" class="button wide">Learn More</a></li>
+					</ul>
+				</div>
+			</section>
+-->
+		<!-- Five -->
+		<!--
+			<section id="five" class="main style1">
+				<div class="container">
+					<header class="major special">
+						<h2>Elements</h2>
+					</header>
+
+					<section>
+						<h4>Text</h4>
+						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+						<hr />
+						<header>
+							<h4>Heading with a Subtitle</h4>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<header>
+							<h5>Heading with a Subtitle</h5>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<hr />
+						<h2>Heading Level 2</h2>
+						<h3>Heading Level 3</h3>
+						<h4>Heading Level 4</h4>
+						<h5>Heading Level 5</h5>
+						<h6>Heading Level 6</h6>
+						<hr />
+						<h5>Blockquote</h5>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+						<h5>Preformatted</h5>
+						<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+					</section>
+
+					<section>
+						<h4>Lists</h4>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<h5>Unordered</h5>
+								<ul>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+								<h5>Alternate</h5>
+								<ul class="alt">
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+							</div>
+							<div class="col-6 col-12-medium">
+								<h5>Ordered</h5>
+								<ol>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis viverra.</li>
+									<li>Felis enim feugiat.</li>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis lorem.</li>
+									<li>Felis enim et feugiat.</li>
+								</ol>
+								<h5>Icons</h5>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<h5>Actions</h5>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<ul class="actions">
+									<li><a href="#" class="button primary">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions small">
+									<li><a href="#" class="button primary small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-12-medium">
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary fit">Default</a></li>
+									<li><a href="#" class="button fit">Default</a></li>
+								</ul>
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary small fit">Small</a></li>
+									<li><a href="#" class="button small fit">Small</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h4>Table</h4>
+						<h5>Default</h5>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<h5>Alternate</h5>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h4>Buttons</h4>
+						<ul class="actions">
+							<li><a href="#" class="button primary">Primary</a></li>
+							<li><a href="#" class="button">Default</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button large">Large</a></li>
+							<li><a href="#" class="button">Default</a></li>
+							<li><a href="#" class="button small">Small</a></li>
+						</ul>
+						<ul class="actions fit">
+							<li><a href="#" class="button fit">Fit</a></li>
+							<li><a href="#" class="button primary fit">Fit</a></li>
+							<li><a href="#" class="button fit">Fit</a></li>
+						</ul>
+						<ul class="actions fit small">
+							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+							<li><a href="#" class="button fit small">Fit + Small</a></li>
+							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+							<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+						</ul>
+						<ul class="actions">
+							<li><span class="button primary disabled">Disabled</span></li>
+							<li><span class="button disabled">Disabled</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Form</h4>
+						<form method="post" action="#">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<select name="demo-category" id="demo-category">
+										<option value="">- Category -</option>
+										<option value="1">Manufacturing</option>
+										<option value="1">Shipping</option>
+										<option value="1">Administration</option>
+										<option value="1">Human Resources</option>
+									</select>
+								</div>
+								<div class="col-4 col-12-small">
+									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+									<label for="demo-priority-low">Low</label>
+								</div>
+								<div class="col-4 col-12-small">
+									<input type="radio" id="demo-priority-normal" name="demo-priority">
+									<label for="demo-priority-normal">Normal</label>
+								</div>
+								<div class="col-4 col-12-small">
+									<input type="radio" id="demo-priority-high" name="demo-priority">
+									<label for="demo-priority-high">High</label>
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="demo-copy" name="demo-copy">
+									<label for="demo-copy">Email me a copy</label>
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="demo-human" name="demo-human" checked>
+									<label for="demo-human">Not a robot</label>
+								</div>
+								<div class="col-12">
+									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+
+					<section>
+						<h4>Image</h4>
+						<h5>Fit</h5>
+						<div class="box alt">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-12"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+							</div>
+						</div>
+						<h5>Left &amp; Right</h5>
+						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+					</section>
+
+				</div>
+			</section>
+		-->
+
+		<!-- Footer -->
+			<section id="footer">
+				<header class="major">
+					<h2>Partners</h2>
+				</header>
+				<div class="container">
+					<div class="sponsorsLogos">
+						<a class="logo" href="https://sonataseniorliving.com/senior-communities-in-florida/sonata-boca-raton/"><img width="30%" src="images/Sonata.png"></img></a>
+						<a class="logo" href="https://www.dkja.net/academics/high-school/engineering-program"><img width="30%" src="images/dkja.png"></img></a>
+						<a class="logo" href="https://www.fau.edu/isense/"><img width="30%" src="images/isense.png"></img></a>
+					</div>
+				</div>
+				
+				<div class="sponsorsLogos">
+				<ul class="icons">
+					<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
+					<li><a href="https://github.com/noahrubin1119/Smart-Walker-FAU-2019-2020/tree/master" target = "_blank"><i class="fab fa-github fa-2x"></i></a></li>
+					<li><a class="noUnderline" href="mailto: smartwalker2020@gmail.com" target = "_blank"><span class="label"><i class="far fa-envelope fa-2x"></i></span></a></li>
+					<li><a href="https://trello.com/b/TZLLzxmT" target="_blank"><i class="fab fa-trello fa-2x"></i></a></li>
+				</ul>
+				</div>
+				<ul class="copyright">
+					<li>&copy; Smart Walker Project</li><li>Thanks to <a href="http://html5up.net">HTML5 UP</a>, we spent more time on the project and less time on the website.</li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+var n = Math.ceil(Math.random() * 6);
+var slideIndex = n;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+			<script>
+var nF = Math.ceil(Math.random() * 6);
+var slideIndexF = nF;
+showSlidesF(slideIndexF);
+
+function plusSlidesF(nF) {
+  showSlidesF(slideIndexF += nF);
+}
+
+function currentSlideF(nF) {
+  showSlidesF(slideIndexF = nF);
+}
+
+function showSlidesF(nF) {
+  var i;
+  var slidesF = document.getElementsByClassName("mySlidesF");
+  var dotsF = document.getElementsByClassName("dotF");
+  if (nF > slidesF.length) {slideIndexF = 1}    
+  if (nF < 1) {slideIndexF = slidesF.length}
+  for (i = 0; i < slidesF.length; i++) {
+      slidesF[i].style.display = "none";  
+  }
+  for (i = 0; i < dotsF.length; i++) {
+      dotsF[i].className = dotsF[i].className.replace(" active", "");
+  }
+  slidesF[slideIndexF-1].style.display = "block";  
+  dotsF[slideIndexF-1].className += " active";
+}
+</script>
+
+	</body>
+</html>
